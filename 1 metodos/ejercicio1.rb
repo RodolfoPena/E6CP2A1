@@ -1,12 +1,11 @@
 # Optimiza el código utilizando tu editor de texto.
 # hint: Debes utilizar 'rubocop'
 # y no obtener errores ni warnings.
-
 def par(x)
-  if x % 2 == 0
-    return true
+  if (x % 2).zero?
+    true
   else
-    return false
+    false
   end
 end
 
