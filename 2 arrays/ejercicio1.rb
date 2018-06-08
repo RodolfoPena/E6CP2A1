@@ -11,15 +11,14 @@ puts  arreglo[0]
 
 puts arreglo.pop
 
-puts arreglo
+print arreglo
+
+puts ""
 
 arreglo.each_with_index { |x,y|
   puts "(#{x},#{y})"
 }
 
-arreglo.each { |j|
-if j.even?
-    j
-  else
+for k in (1..(arreglo.length))
+  puts arreglo[k] if (k % 2).zero?
 end
- }
